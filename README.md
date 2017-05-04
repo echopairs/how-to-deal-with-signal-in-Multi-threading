@@ -23,5 +23,9 @@ sudo make install
 3. 使用
 本例子在于多线程程序运行过程中通过信号来动态产生性能的消耗图,可以直观的得出系统的性能瓶颈。PS:在后台服务程序中信号推荐在一个线程中执行，防止出现不可预知的错误
 
+// TODO pprof --dot signal_example sig.profile >> sig.dot
+
+// dot -Tpng sig.dot>>sig.png
+
 
 
