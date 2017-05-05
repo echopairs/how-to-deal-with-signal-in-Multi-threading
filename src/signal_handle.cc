@@ -28,7 +28,7 @@ void BaseServiceProcess::installSignalHandle()
     sigset_t bset, oset;
     sigemptyset(&bset);
     sigaddset(&bset, SIGHUP);
-    sigaddset(&bset, SIGINT);
+ //   sigaddset(&bset, SIGINT);
     sigaddset(&bset, SIGTERM);
     sigaddset(&bset, 60);
     sigaddset(&bset, 61);
